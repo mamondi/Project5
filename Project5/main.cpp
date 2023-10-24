@@ -5,11 +5,7 @@ using namespace std;
 
 int main()
 {
-	const int lenth = 10;
-	const int width = 10;
-	int arr[lenth][width];
-
-	int i = 0;
+i = 0;
 	int j = 0;
 
 	srand(time(NULL));
