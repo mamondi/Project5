@@ -21,16 +21,15 @@ int main()
 		sumRow = 0;
 		for (int j = 0; j < COLS; j++)
 		{
-			arr[i][j] = rand() % 10;
+			arr[i][j] = rand() % 3;
 			cout << arr[i][j] << " ";
 			sumRow += arr[i][j];
 		}
 
-		cout << "Sum row " << i << " = " << sumRow << endl;
+		cout << " | " << i << " = " << sumRow << endl;
 		sum += sumRow;
 	}
-	cout << endl;
-
+	cout << "------------" << endl;
 	for (int i = 0; i < COLS; i++)
 	{
 		sumCol = 0;
@@ -38,10 +37,13 @@ int main()
 		{
 			sumCol += arr[j][i];
 		}
-		cout << "Sum col " << i << " = " << sumCol << endl;
+		cout << sumCol << " ";
 		sumAll += sumCol;
+
+
+
 	}
-	cout << "Sum all cols = " << sumAll << endl;
+	cout << " | " << sumAll << endl;
 	cout << endl;
 
 
